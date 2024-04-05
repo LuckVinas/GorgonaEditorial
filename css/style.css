@@ -891,7 +891,7 @@ margin-top: -5rem;}
 	  position: relative;
 	  z-index: 2;
 	}
-	.cabecera .link-logo .logo{width:12rem;height:auto;}
+	.cabecera .link-logo .logo{width:17rem;height:auto;}
 	.cabecera .container{
 		width: 100%;
 		background-color:var(--rojo);
