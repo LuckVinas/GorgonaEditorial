@@ -510,7 +510,7 @@ footer .pie .lista-redes a{
 #historia .columna-historia .contenedor-historia-imagen img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;position:absolute;top:0;left:0;padding-top: 5rem; width:100%;}
 #historia .columna-historia-info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
 #historia .columna-historia-info h2{color:	#B8860B;margin-top:0;font-size:3rem;font-style:italic;}
-#historia .columna-historia-info p{font-style:italic;font-size:1.5rem;margin:0; color: var(--blanco);}
+#historia .columna-historia-info p{font-style:italic;font-size:1.5rem;margin:0;margin-top: 1rem; color: var(--blanco);}
 #contacto{ 
 	font-family: "Edu NSW ACT Foundation", cursive;
 	
