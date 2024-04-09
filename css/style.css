@@ -661,7 +661,7 @@ margin-top: -5rem;}
 	#historia .columna-historia .contenedor-historia-imagen img{
 		padding-top: 0rem;
 	}
-	#historia .columna-historia-info{display:block;}
+	#historia .columna-historia-info{display:block;margin-top: 15rem;}
 	#historia .columna-historia-info h2{margin-top:10rem;}
 	#historia .columna-historia-info p{font-size:1rem;margin-top: 1rem;}
 	#historia .columna-historia-info.derecha-texto{text-align:left;}
@@ -792,7 +792,7 @@ margin-top: -5rem;}
 	#historia .columna-historia .contenedor-historia-imagen img{
 		padding-top: 0rem;
 	}
-	#historia .columna-historia-info{display:block;}
+	#historia .columna-historia-info{display:block;margin-top: 15rem;}
 	#historia .columna-historia-info h2{margin-top:10rem;}
 	#historia .columna-historia-info p{font-size:1rem;
 	margin-top: 1rem;}
@@ -911,7 +911,7 @@ margin-top: -5rem;}
 	#historia .columna-historia .contenedor-historia-imagen img{
 		padding-top: 0rem;
 	}
-	#historia .columna-historia-info{display:block;}
+	#historia .columna-historia-info{display:block;margin-top: 15rem;}
 	#historia .columna-historia-info h2{margin-top:10rem;}
 	#historia .columna-historia-info p{font-size:1rem;margin-top: 1rem;}
 	#historia .columna-historia-info.derecha-texto{text-align:left;}
