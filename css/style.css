@@ -491,7 +491,7 @@ footer .pie .lista-redes a{
 	
 }
 #libros p{
-	font-family: "Dancing Script", cursive;
+	/*font-family: "Dancing Script";*/
 	font-size: 1.5rem;
 	color:var(--blanco);
 }
