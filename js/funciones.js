@@ -6,16 +6,11 @@ var acciones = {
 	listo : function(){
 
 
-		//jQuery("#lacarta .boton-amarillo").click(acciones.clickbtnamarillo);
-		// jQuery("#lacarta .conteendor-cuadrado").find("img").eq(0).click(acciones.obtenersrc);
-		//jQuery("#lacarta .conteendor-cuadrado").click(acciones.obtenersrc);
 		jQuery(".cabecera .menu a[href*='#']").click(acciones.irancla);
 		jQuery("#libros .boton-amarillo a[href*='#']").click(acciones.clickbtnamarillo);
-		//jQuery(".btn-enviar").click(acciones.enviar);
 		jQuery(".cabecera .hamb").click(acciones.abrirmenu);
 		jQuery(".cerrarimagen").click(acciones.cerrarimagen);
 		jQuery(".titulo-acordion").click(acciones.abriracordion);
-		jQuery(".saltarina").click(acciones.irsaltarina);
 
 		jQuery('.owl-carousel').owlCarousel({
 		    loop:true,
@@ -38,19 +33,9 @@ var acciones = {
 
 	},
 
-	irsaltarina: function()
-	{
-		var posicion = jQuery(this).closest("section").next("section").offset().top;
-
-		jQuery("html,body").animate({
-			"scrollTop" : posicion
-		},800);
-	},
 
 	abriracordion:function()
 	{
-		// jQuery(this).nextAll(".cuerpo-acordion").slideDown("slow");
-		// jQuery(this).next(".cuerpo-acordion").slideUp("slow");
 
 		if(jQuery(this).find("i").hasClass("fa-chevron-up"))
 		{
@@ -67,19 +52,11 @@ var acciones = {
 	abrirmenu: function(e)
 	{
 		e.preventDefault();
-		// jQuery(".cabecera .menu").addClass("abierto");
-		// jQuery(".cabecera .menu").removeClass("abierto");
 		jQuery(".cabecera .menu").toggleClass("abierto");
 		jQuery("body").toggleClass("abierto");
 		jQuery(this).find("i").toggleClass("fa-times");
 
 
-		// if(jQuery(".cabecera .menu").hasClass("abierto"))
-		// {
-		// 	jQuery(".cabecera .menu").removeClass("abierto");
-		// }else{
-		// 	jQuery(".cabecera .menu").addClass("abierto");
-		// }
 	},
 
 	enviar:function()
@@ -106,7 +83,6 @@ var acciones = {
 			submitHandler: function(form) {
 
 
-			// jQuery("#nombre").val("holaaaaaaaaaa");
 
 
 
@@ -124,12 +100,6 @@ var acciones = {
 					dataType: "json"
 				}).done(function(data){
 
-					// if(data.tipo == 1)
-					// {
-					// 	jQuery("#respuesta").css({"color":"green"}).html(data.mensaje);
-					// }else{
-					// 	jQuery("#respuesta").css({"color":"red"}).html(data.mensaje);
-					// }
 					jQuery("#respuesta").html("");
 					jQuery("label.error").remove();
 					jQuery(".form-input.error").removeClass("error");
@@ -154,63 +124,10 @@ var acciones = {
 
 
 
-		// jQuery("#contacto").css({"background-color":"#ccc","color":"white"});
-		// var nombre = jQuery("#nombre").val();
-		// var email = jQuery("#email").val();
-		// var asunto = jQuery("#asunto").val();
-		// var mensaje = jQuery("#mensaje").val();
-
-		// // jQuery("#nombre").val("holaaaaaaaaaa");
-
-		// jQuery.ajax({
-		// 	method : "POST",
-		// 	url : "registro.php",
-		// 	data :{
-		// 		"nombre" : nombre,
-		// 		"email" : email,
-		// 		"asunto":asunto,
-		// 		"mensaje": mensaje
-		// 	},
-		// 	dataType: "json"
-		// }).done(function(data){
-
-		// 	// if(data.tipo == 1)
-		// 	// {
-		// 	// 	jQuery("#respuesta").css({"color":"green"}).html(data.mensaje);
-		// 	// }else{
-		// 	// 	jQuery("#respuesta").css({"color":"red"}).html(data.mensaje);
-		// 	// }
-		// 	jQuery("#respuesta").html("");
-		// 	jQuery(".error").remove();
-		// 	jQuery(".error-input").removeClass("error-input");
-		// 	if(data.tipo == 1)
-		// 	{
-		// 		jQuery("#respuesta").css({"color":"green"}).html(data.mensaje);
-		// 	}else{
-
-		// 		jQuery.each(data.errores,function(indice,elemento){
-		// 			var html = "<span class='error error-"+elemento.id+"'>"+elemento.mensaje+"</span>";
-		// 			jQuery("#"+elemento.id).addClass("error-input");
-		// 			jQuery("#"+elemento.id).closest(".form-bloques").append(html);
-		// 		});
-		// 	}
-		// }).fail(function(error){
-		// 	jQuery("#respuesta").css({"color":"red"}).html(error.responseText);
-		// })
 	},
 
 	obtenersrc:function()
 	{
-		// var src = jQuery(this).find("img").attr("src");
-		// jQuery(this).find("img").attr("src","img/alonso.jpg");
-
-		// var html = jQuery(this).html();
-		// console.log(html);
-		// jQuery(this).html("<h3>holaaaa</h3>");
-
-		// var text = jQuery(this).find("h2").text();
-		// console.log(text);
-		// jQuery(this).find("h2").text("Prueba de seteo");
 
 	},
 
@@ -233,7 +150,6 @@ var acciones = {
 		}else{
 			window.location.href = url;
 		}
-		//alert(ancla);
 	},
 
 	detalleancla:function(ancla)
@@ -246,8 +162,6 @@ var acciones = {
 
 	clickbtnamarillo : function(e){
 		e.preventDefault();
-		//var href = this.hash;
-		//var url = jQuery(this).attr("href").find("img").attr("href");
 		var src = jQuery(this).closest(".conteendor-cuadrado").find("img").attr("src");
 		
 		
@@ -310,15 +224,6 @@ var acciones = {
 			cabecera.removeClass("fondo");
 		}
 
-		// alto_pantalla = jQuery(window).height();
-		// console.log(ancho_pantalla+" - "+alto_pantalla);
-
-		/*alto_menu = jQuery(".cabecera").height();*/
-		// alto_menu = jQuery(".cabecera").innerHeight();
-		// alto_menu = jQuery(".cabecera").outerHeight(true);
-
-		// jQuery(".cabecera").height("200");
-		// console.log(alto_menu);
 
 	},
 
