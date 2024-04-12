@@ -11,6 +11,8 @@ var acciones = {
 		jQuery(".cabecera .hamb").click(acciones.abrirmenu);
 		jQuery(".cerrarimagen").click(acciones.cerrarimagen);
 		jQuery(".titulo-acordion").click(acciones.abriracordion);
+		jQuery(".saltarina").click(acciones.irsaltarina);
+
 
 		jQuery('.owl-carousel').owlCarousel({
 		    loop:true,
@@ -32,6 +34,15 @@ var acciones = {
 
 
 	},
+	irsaltarina: function()
+	{
+		var posicion = jQuery(this).closest("section").next("section").offset().top;
+
+		jQuery("html,body").animate({
+			"scrollTop" : posicion
+		},800);
+	},
+
 
 
 	abriracordion:function()
