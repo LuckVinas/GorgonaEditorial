@@ -154,6 +154,48 @@ footer .pie .lista-redes a{
 .cabecera .menu a:last-child{
 	margin-right:0;
 }
+.saltarina{
+	width:2.5rem;
+	height:2.5rem;
+	border-radius:100%;
+	border:0.2rem solid #fff;
+	color:#fff;
+	text-decoration:none;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	font-size:1.8rem;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	position:absolute;
+	bottom:3rem;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	-webkit-animation-name:saltar;
+	animation-name:saltar;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-timing-function:linear;
+	animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+}
+.saltarina:hover{
+	-webkit-animation-play-state:paused;
+	animation-play-state:paused;
+}
+@-webkit-keyframes saltar{
+	0%{bottom:3rem;}
+	50%{bottom:5rem;}
+	100%{bottom:3rem;}
+}
+
 .cabecera .hamb{
 	font-size:4rem;
 	display:none;
@@ -271,16 +313,12 @@ footer .pie .lista-redes a{
 	padding-right:2rem;padding-left:2rem;top:-100%;color:#fff;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .conteendor-cuadrado:hover .contenido-cuadrado{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
 .conteendor-cuadrado .contenido-cuadrado h2{margin-top:0;}
-.mapa{position:relative;padding-bottom:33.33%;width:100%;}
-.mapa iframe{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-filter:grayscale(1);filter:grayscale(1);}
 .seccion{padding-top:4rem;padding-bottom:4rem;}
 .centrar-texto{text-align:center;}
 .derecha-texto{text-align:right;}
 .inclinar--texto{font-style:italic;}
 .justificar-texto{text-align:justify;}
-.video-fondo{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;z-index:1;-webkit-filter:grayscale(1);filter:grayscale(1);opacity:0.5;}
-.importante{font-style:italic;}
-.titulos{color: var(--blanco);padding-top: 12rem;margin-bottom:2.8rem;text-align:center;font-size:3rem;/*text-shadow:1.3rem 1.3rem 0.15rem black;*/position:relative;padding-top:1rem;display:inline-block;padding-right:1rem;padding-left:1rem;}
+.titulos{color: var(--blanco);margin-bottom:2.8rem;text-align:center;font-size:3rem;position:relative;padding-top:8rem;display:inline-block;padding-right:1rem;padding-left:1rem;}
 .btn{padding:0.8rem 2rem;font-size:16px;text-decoration:none;text-align:center;border-radius:15px;border-width:2px;border-style:solid;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .btn-circulo{width:2.8rem;height:2.8rem;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0.3rem;font-size:1.3rem;border-radius:100%;border-width:0.15rem;border-style:solid;text-decoration:none;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .btn-circulo.borde-blanco{color:#fff;border-color:#fff;}
@@ -363,6 +401,11 @@ footer .pie .lista-redes a{
 	animation-timing-function: ease;
 	animation-iteration-count: infinite;
 }
+@keyframes saltar{0%{bottom:3rem;}
+50%{bottom:5rem;}
+100%{bottom:3rem;}
+}
+
 
 @keyframes palpitar
 {
@@ -455,6 +498,36 @@ footer .pie .lista-redes a{
 {
 	font-size: 1.5rem;
 }
+#banner{height:calc(100vh - 7rem);}
+#banner .banner-home{width:100%;height:100%;display:block;opacity:0.75;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;}
+#banner .container{position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
+#banner .container h1{font-size:4rem;color:#fff;margin-top: 19rem;}
+
+#noticias{ font-family: "Edu NSW ACT Foundation", cursive;margin:0;}
+#noticias .row-centrada{margin:0; }
+#noticias .titulos{
+	color:var(--blanco);
+}
+#noticias .bloque-carrusel{padding-top:3rem;padding-bottom:3rem;padding-left:10rem;padding-right:10rem;position:relative;/*-webkit-box-shadow:0px 8px 15px -4px rgba(179,179,179,50%);box-shadow:0px 8px 15px -4px rgba(179,179,179,50%)*/}
+#noticias .fila-reco{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin-bottom:2rem;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+#noticias .fila-reco:nth-last-child{margin-bottom:0;}
+#noticias .fila-reco:last-child:before,
+#noticias .fila-reco:last-child:after{display:none;}
+#noticias .columna-imagen-reco{width:35%;}
+#noticias .columna-imagen-reco img{width:100%; border-radius: 1rem;}
+#noticias .columna-texto-reco{width:50%;padding-left:12rem;}
+#noticias .columna-texto-reco:before{content:"";width:1rem;height:1rem;background-color:var(--morado);position:absolute;bottom:0;right:0;-webkit-transform:translateY(50%);-ms-transform:translateY(50%);transform:translateY(50%);border-radius:100%;}
+#noticias .fila-reco:last-child .columna-texto-reco:before{display:none;}
+#noticias .columna-texto-reco h4{font-size:2rem;margin:0;line-height:1;color:var(--rojo);}
+#noticias .columna-texto-reco p{color:var(--blanco);margin-top:1rem;font-size:1.5rem;}
+#noticias .columna-texto-reco p span{display:block;}
+#noticias .columna-texto-reco p:last-child{margin-bottom:0;}
+#noticias .owl-theme .owl-dots .owl-dot span{background-color:transparent;border:0.3rem solid var(--blanco);}
+#noticias .owl-theme .owl-dots .owl-dot.active span,
+#noticias .owl-theme .owl-dots .owl-dot:hover span{background:var(--blanco);border:0.3rem solid var(--blanco);}
+#noticias .item-anterior{position:absolute;left:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
+#noticias .item-siguiente{position:absolute;right:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
+
 #libros{
 	
 	background-position:center bottom;
@@ -463,8 +536,6 @@ footer .pie .lista-redes a{
 }
 #libros .titulos{
 	color:var(--blanco);
-	
-
 }
 #libros .titulos::before,
 #libros .nombre{
@@ -491,26 +562,10 @@ footer .pie .lista-redes a{
 	
 }
 #libros p{
-	/*font-family: "Dancing Script";*/
 	font-size: 1.5rem;
 	color:var(--blanco);
 }
-#historia{
-	font-family: "Edu NSW ACT Foundation", cursive;
-	
-	
-}
-#historia .titulos{
-	color:var(--blanco);
-	
-}
 
-#historia .columna-historia{}
-#historia .columna-historia .contenedor-historia-imagen{position:relative;width:100%;height: auto; padding-bottom:56.25%}
-#historia .columna-historia .contenedor-historia-imagen img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;position:absolute;top:0;left:0;padding-top: 5rem; width:100%;}
-#historia .columna-historia-info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
-#historia .columna-historia-info h2{color:	#B8860B;margin-top:1rem;font-size:3rem;font-style:italic;}
-#historia .columna-historia-info p{font-style:italic;font-size:1.5rem;margin:0;margin-top: 1rem; color: var(--blanco);}
 #contacto{ 
 	font-family: "Edu NSW ACT Foundation", cursive;
 	
@@ -525,36 +580,24 @@ margin-top: -5rem;}
 #contacto .columna-info-contacto .email{ font-family: "Edu NSW ACT Foundation", cursive;color:var(--blanco);font-size:2.3rem;text-decoration:none;margin-bottom:1rem;display:inline-block;margin-top:0;}
 #contacto .columna-info-contacto .email{margin-bottom:0;}
 
-#noticias{ font-family: "Edu NSW ACT Foundation", cursive;}
-
-#noticias .row-centrada{margin:0; }
-#noticias .titulos{
-	color:var(--blanco);
-	padding-top: 6rem;
-
+#historia{
+	font-family: "Edu NSW ACT Foundation", cursive;
+	
+	
 }
-#noticias .bloque-carrusel{padding-top:3rem;padding-bottom:3rem;padding-left:10rem;padding-right:10rem;position:relative;/*-webkit-box-shadow:0px 8px 15px -4px rgba(179,179,179,50%);box-shadow:0px 8px 15px -4px rgba(179,179,179,50%)*/}
-#noticias .fila-reco{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin-bottom:2rem;-ms-flex-wrap:wrap;flex-wrap:wrap;}
-#noticias .fila-reco:nth-last-child{margin-bottom:0;}
-#noticias .fila-reco:last-child:before,
-#noticias .fila-reco:last-child:after{display:none;}
-#noticias .columna-imagen-reco{width:35%;}
-#noticias .columna-imagen-reco img{width:100%; border-radius: 1rem;}
-#noticias .columna-texto-reco{width:50%;padding-left:12rem;}
-#noticias .columna-texto-reco:before{content:"";width:1rem;height:1rem;background-color:var(--morado);position:absolute;bottom:0;right:0;-webkit-transform:translateY(50%);-ms-transform:translateY(50%);transform:translateY(50%);border-radius:100%;}
-#noticias .fila-reco:last-child .columna-texto-reco:before{display:none;}
-#noticias .columna-texto-reco h4{font-size:2rem;margin:0;line-height:1;color:var(--rojo);}
-#noticias .columna-texto-reco p{color:var(--blanco);margin-top:1rem;font-size:1.5rem;}
-#noticias .columna-texto-reco p span{display:block;}
-#noticias .columna-texto-reco p:last-child{margin-bottom:0;}
-#noticias .owl-theme .owl-dots .owl-dot span{background-color:transparent;border:0.3rem solid var(--blanco);}
-#noticias .owl-theme .owl-dots .owl-dot.active span,
-#noticias .owl-theme .owl-dots .owl-dot:hover span{background:var(--blanco);border:0.3rem solid var(--blanco);}
-#noticias .item-anterior{position:absolute;left:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
-#noticias .item-siguiente{position:absolute;right:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
+#historia .titulos{
+	color:var(--blanco);
+	
+}
+#historia .columna-historia{}
+#historia .columna-historia .contenedor-historia-imagen{position:relative;width:100%;height: auto; padding-bottom:56.25%}
+#historia .columna-historia .contenedor-historia-imagen img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;position:absolute;top:0;left:0;padding-top: 5rem; width:100%;}
+#historia .columna-historia-info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+#historia .columna-historia-info h2{color:	#B8860B;margin-top:1rem;font-size:3rem;font-style:italic;}
+#historia .columna-historia-info p{font-style:italic;font-size:1.5rem;margin:0;margin-top: 1rem; color: var(--blanco);}
+
 
 #arte{ font-family: "Edu NSW ACT Foundation", cursive;}
-
 #arte .row-centrada{margin:0; }
 #arte .titulos{
 	color:var(--blanco);
@@ -782,12 +825,15 @@ margin-top: -5rem;}
 		margin: 1rem 0;
 		font-size: 2rem;
 	}
+	}
 	.seccion{padding-bottom:2.8rem;padding-top:2.8rem;}
 	.conteendor-cuadrado .contenido-cuadrado{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
 	.mapa{padding-bottom:100%;}
 	.padding-grande{padding:2rem;}
 	.form-bloques .form-input{font-size:1.4rem;}
 	.form-bloques.form-bloque-boton .btn{width:100%;font-size:1.4rem;}
+	#banner,
+	#banner .container h1{ margin-top: -.5rem; font-size:2rem;}
 
 	#historia .columna-historia .contenedor-historia-imagen img{
 		padding-top: 0rem;
