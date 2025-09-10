@@ -87,21 +87,23 @@ footer .pie .lista-redes a{
 	left:0;
 	width:100%;
 	z-index:999;
-	background-color:var(--rojo);
+	/*background-color:var(--rojo);*/
 
 
 }
 .cabecera.fondo{
 	box-shadow: 0px 1rem 1rem 0px var(--darkred);
+	background-color: var(--rojo);
 
 	
 }
 .cabecera.fondo .link-logo .logo{
 	width:12rem;
+	
 }
 .cabecera .container{
 	width: 55%;
-	background-color:var(--rojo);
+	/*background-color:var(--rojo);*/
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -242,6 +244,7 @@ footer .pie .lista-redes a{
 }
 .columna-33{
 	width:33.33%;
+	margin-top: 2rem;
 }
 .columna-25{
 	width:22%;
@@ -256,6 +259,7 @@ footer .pie .lista-redes a{
 }
 .empujar-33{
 	margin-left:33.33%;
+
 }
 .orden{
 	-webkit-box-ordinal-group:3;
@@ -317,14 +321,11 @@ footer .pie .lista-redes a{
 	padding-right:2rem;padding-left:2rem;top:-100%;color:#fff;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .conteendor-cuadrado:hover .contenido-cuadrado{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
 .conteendor-cuadrado .contenido-cuadrado h2{margin-top:0;}
-.mapa{position:relative;padding-bottom:33.33%;width:100%;}
-.mapa iframe{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-filter:grayscale(1);filter:grayscale(1);}
 .seccion{padding-top:4rem;padding-bottom:4rem;}
 .centrar-texto{text-align:center;}
 .derecha-texto{text-align:right;}
 .inclinar--texto{font-style:italic;}
 .justificar-texto{text-align:justify;}
-.video-fondo{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;z-index:1;-webkit-filter:grayscale(1);filter:grayscale(1);opacity:0.5;}
 .importante{font-style:italic;}
 .titulos{color: var(--blanco);padding-top: 6rem;margin-bottom:2.8rem;text-align:center;font-size:3rem;position:relative;display:inline-block;padding-right:1rem;padding-left:1rem;}
 .btn{padding:0.8rem 2rem;font-size:16px;text-decoration:none;text-align:center;border-radius:15px;border-width:2px;border-style:solid;-webkit-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
@@ -510,14 +511,19 @@ footer .pie .lista-redes a{
 	
 	background-position:center bottom;
 	background-repeat:no-repeat;
-	font-family: "Edu NSW ACT Foundation", cursive;
+	font-family: "Open Sans", sans-serif;
 }
 #libros .titulos{
 	color:var(--blanco);
+	font-family: "Playfair Display", serif;
+
 	
 }
 #libros .nombre{
-	color:var(--naranja);
+	color:var(--blanco);
+}
+#libros .autor{
+	color: var(--naranja);
 }
 #libros .contenedor-serv{
 	text-align:center;
@@ -544,13 +550,41 @@ footer .pie .lista-redes a{
 	font-size: 1.5rem;
 	color:var(--blanco);
 }
+#contacto{
+	font-family: "Sans Serif", cursive;
+
+
+}
+#contacto .contenedor-serv{
+	color: var(--blanco);
+	text-align:center;
+	background-color:var(--morado);padding:2.8rem  2rem;
+	height:100%;border-radius:1rem;
+	-webkit-transition:all .4s ease;
+	-o-transition:all .4s ease;
+	transition:all .4s ease;
+}
+#contacto .contenedor-serv:hover{
+	-webkit-box-shadow:0.13rem 0.13rem 1.3rem 0px var(--blanco);
+	box-shadow:0.13rem 0.13rem 1.3rem 0px var(--blanco);
+}
+#contacto .contenedor-serv i{
+	font-size:2.8rem;
+	color: var(--blanco);
+	-webkit-transition:all .4s ease;
+	-o-transition:all .4s ease;transition:all .4s ease;}
+#contacto .contenedor-serv:hover i{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2);}
+
 #historia{
-	font-family: "Edu NSW ACT Foundation", cursive;
+	/*font-family: "Edu NSW ACT Foundation", cursive;*/
+	font-family: "Open Sans", sans-serif;
 	
 	
 }
 #historia .titulos{
 	color:var(--blanco);
+	font-family: "Playfair Display", serif;
+
 	
 }
 
@@ -561,7 +595,7 @@ footer .pie .lista-redes a{
 #historia .columna-historia-info h2{color:	#B8860B;margin-top:1rem;font-size:3rem;font-style:italic;}
 #historia .columna-historia-info p{font-style:italic;font-size:1.5rem;margin:0;margin-top: 1rem; color: var(--blanco);}
 #contacto{ 
-	font-family: "Edu NSW ACT Foundation", cursive;
+	font-family: "Open Sans", sans-serif;
 	
 }
 #contacto .columna-info-contacto{ font-family: "Edu NSW ACT Foundation", cursive;font-size: 2rem; font-style:italic;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center; margin-bottom: 7rem;
@@ -574,10 +608,13 @@ margin-top: -5rem;}
 #contacto .columna-info-contacto .email{ font-family: "Edu NSW ACT Foundation", cursive;color:var(--blanco);font-size:2.3rem;text-decoration:none;margin-bottom:1rem;display:inline-block;margin-top:0;}
 #contacto .columna-info-contacto .email{margin-bottom:0;}
 
-#noticias{ font-family: "Edu NSW ACT Foundation", cursive;}
+#noticias{ 
+	font-family: "Open Sans", sans-serif;
+}
 
 #noticias .row-centrada{margin:0; }
 #noticias .titulos{
+	font-family: "Playfair Display", serif;
 	color:var(--blanco);
 
 }
@@ -601,7 +638,7 @@ margin-top: -5rem;}
 #noticias .item-anterior{position:absolute;left:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
 #noticias .item-siguiente{position:absolute;right:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:3rem;color:var(--rojo);z-index:2;}
 
-#arte{ font-family: "Edu NSW ACT Foundation", cursive;}
+#arte{ font-family: "Edu NSW ACT Foundation", cursive;color: var(--blanco);}
 
 #arte .row-centrada{margin:0; }
 #arte .titulos{
@@ -739,7 +776,7 @@ margin-top: -5rem;}
 	#noticias .columna-texto-reco{width:100%;padding-left:2.5rem;padding-right:2.5rem;padding-bottom:1.5rem;min-height:7.5rem;}
 	#noticias .columna-texto-reco:before{width:0.5rem;height:0.5rem;}
 	#noticias .owl-theme .owl-dots .owl-dot span{border:2px solid #4B0082;}
-
+	#contacto .contenedor-serv{height:auto;margin-bottom:1rem;}
 	#arte{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#arte .item-siguiente,
 	#arte .item-anterior{font-size:2rem;top:10rem;}
@@ -850,11 +887,6 @@ margin-top: -5rem;}
 	#historia .columna-historia-info p{font-size:2rem;
 	margin-top: 1rem;}
 	#historia .columna-historia-info.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto h2{font-size: 3rem;}
-	#contacto .columna-info-contacto .telefono,
-	#contacto .columna-info-contacto .email{font-size:1.4rem;}
-	#contacto .columna-info-contacto .email{margin-bottom:2rem;}
 	#noticias{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#noticias .item-siguiente,
 	#noticias .item-anterior{font-size:2rem;top:10rem;}
@@ -871,7 +903,7 @@ margin-top: -5rem;}
 	#noticias .columna-texto-reco{width:100%;padding-left:2.5rem;padding-right:2.5rem;padding-bottom:1.5rem;min-height:7.5rem;}
 	#noticias .columna-texto-reco:before{width:0.5rem;height:0.5rem;}
 	#noticias .owl-theme .owl-dots .owl-dot span{border:2px solid #4B0082;}
-
+	#contacto .contenedor-serv{height:auto;margin-bottom:1rem;}
 	#arte{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#arte .item-siguiente,
 	#arte .item-anterior{font-size:2rem;top:10rem;}
@@ -968,11 +1000,6 @@ margin-top: -5rem;}
 	#historia .columna-historia-info h2{margin-top:10rem;}
 	#historia .columna-historia-info p{font-size:1.5rem;margin-top: 1rem;}
 	#historia .columna-historia-info.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto h2{font-size: 3rem;}
-	#contacto .columna-info-contacto .telefono,
-	#contacto .columna-info-contacto .email{font-size:1.4rem;}
-	#contacto .columna-info-contacto .email{margin-bottom:2rem;}
 	#noticias{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#noticias .item-siguiente,
 	#noticias .item-anterior{font-size:2rem;top:10rem;}
@@ -989,7 +1016,7 @@ margin-top: -5rem;}
 	#noticias .columna-texto-reco{width:100%;padding-left:2.5rem;padding-right:2.5rem;padding-bottom:1.5rem;min-height:7.5rem;}
 	#noticias .columna-texto-reco:before{width:0.5rem;height:0.5rem;}
 	#noticias .owl-theme .owl-dots .owl-dot span{border:2px solid #4B0082;}
-
+	#contacto .contenedor-serv{height:auto;margin-bottom:1rem;}
 	#arte{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#arte .item-siguiente,
 	#arte .item-anterior{font-size:2rem;top:10rem;}
@@ -1081,11 +1108,6 @@ margin-top: -5rem;}
 	#historia .columna-historia-info h2{margin-top:10rem; }
 	#historia .columna-historia-info p{font-size:1.5rem;margin-top: 1rem;}
 	#historia .columna-historia-info.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto.derecha-texto{text-align:left;}
-	#contacto .columna-info-contacto h2{font-size: 3rem;}
-	#contacto .columna-info-contacto .telefono,
-	#contacto .columna-info-contacto .email{font-size:1.4rem;}
-	#contacto .columna-info-contacto .email{margin-bottom:2rem;}
 	#noticias{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#noticias .item-siguiente,
 	#noticias .item-anterior{font-size:2rem;top:10rem;}
@@ -1102,7 +1124,7 @@ margin-top: -5rem;}
 	#noticias .columna-texto-reco{width:100%;padding-left:2.5rem;padding-right:2.5rem;padding-bottom:1.5rem;min-height:7.5rem;}
 	#noticias .columna-texto-reco:before{width:0.5rem;height:0.5rem;}
 	#noticias .owl-theme .owl-dots .owl-dot span{border:2px solid #4B0082;}
-
+	#contacto .contenedor-serv{height:auto;margin-bottom:1rem;}
 	#arte{padding-top:2.5rem;padding-bottom:2.5rem;}
 	#arte .item-siguiente,
 	#arte .item-anterior{font-size:2rem;top:10rem;}

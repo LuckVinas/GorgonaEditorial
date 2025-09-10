@@ -259,3 +259,6 @@ function validando(token)
 {
 	acciones.enviar();
 }
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
